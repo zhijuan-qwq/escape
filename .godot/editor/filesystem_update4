@@ -1,0 +1,7 @@
+res://scene/level/level1/level1.tscn
+res://assets/images/player/player.gdshader
+res://scene/level/level1/level_1_2.tscn
+res://scene/player/player.tscn
+res://scene/module/movable_platform.tscn
+res://scene/module/bad_platform.tscn
+res://scene/bgm.tscn

@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkcmyt3fxbw0e"]
+
+[ext_resource type="Script" path="res://scene/level/level1.gd" id="1_vbidy"]
+[ext_resource type="PackedScene" uid="uid://yae402n37gw2" path="res://scene/player.tscn" id="3_p1alt"]
+
+[node name="Level1" type="Node2D"]
+script = ExtResource("1_vbidy")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_p1alt")]
+position = Vector2(146, 269)
+collision_layer = 3
+collision_mask = 3

@@ -1,0 +1,14 @@
+AnimationPlayer
+Node2D
+Timer
+CollisionShape2D
+Area2D
+Sprite2D
+StaticBody2D
+AnimatedSprite2D
+AnimatableBody2D
+ParallaxLayer
+ParallaxBackground
+CanvasModulate
+DirectionalLight2D
+Node

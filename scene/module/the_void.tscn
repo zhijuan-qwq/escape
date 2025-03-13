@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://com1gfaekhsx5"]
+
+[ext_resource type="Script" uid="uid://d1txd6k3yxf1x" path="res://scene/module/the_void.gd" id="1_3iotf"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_wtmd0"]
+
+[node name="TheVoid" type="Area2D"]
+collision_layer = 2147483649
+collision_mask = 2147483649
+script = ExtResource("1_3iotf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 64)
+shape = SubResource("WorldBoundaryShape2D_wtmd0")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

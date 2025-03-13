@@ -1,0 +1,82 @@
+[gd_scene load_steps=12 format=3 uid="uid://d20t223sjxpp6"]
+
+[ext_resource type="Texture2D" uid="uid://durg077t2lvar" path="res://assets/images/map/tiles/level1/gate.png" id="1_3uhbj"]
+[ext_resource type="Script" uid="uid://yyfcx3yqfkj4" path="res://scene/module/gate.gd" id="1_saijd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l0hss"]
+atlas = ExtResource("1_3uhbj")
+region = Rect2(0, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r1ndv"]
+atlas = ExtResource("1_3uhbj")
+region = Rect2(0, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3jo0v"]
+atlas = ExtResource("1_3uhbj")
+region = Rect2(32, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4x63a"]
+atlas = ExtResource("1_3uhbj")
+region = Rect2(64, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_82qss"]
+atlas = ExtResource("1_3uhbj")
+region = Rect2(96, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yh6vt"]
+atlas = ExtResource("1_3uhbj")
+region = Rect2(128, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_isoqr"]
+atlas = ExtResource("1_3uhbj")
+region = Rect2(160, 0, 32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v0e4l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l0hss")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r1ndv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jo0v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4x63a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82qss")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yh6vt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_isoqr")
+}],
+"loop": false,
+"name": &"open",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ptkph"]
+size = Vector2(18, 36)
+
+[node name="Gate" type="Area2D" node_paths=PackedStringArray("gate")]
+script = ExtResource("1_saijd")
+gate = NodePath("AnimatedSprite2D")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -24)
+sprite_frames = SubResource("SpriteFrames_v0e4l")
+animation = &"open"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -18)
+shape = SubResource("RectangleShape2D_ptkph")
