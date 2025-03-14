@@ -1,9 +1,0 @@
-res://scene/bgm.tscn::8ccd2543c28d736029f918d6900baa3f::1741676800::res://.godot/exported/133200997/export-d7392420f5865391ab9c0ec7e4a86cba-bgm.scn
-res://scene/global.tscn::741d7fea1a0fefeb66840ac896ec67e9::1741561126::res://.godot/exported/133200997/export-88c327182dc79665d626d2d2a51504fc-global.scn
-res://scene/player/player.tscn::4afd5e6945bf1d9a50076c596dc716ff::1741780016::res://.godot/exported/133200997/export-3e038ebae82c2bbbd20a0c261d1078da-player.scn
-res://scene/level/level1/level1.tscn::bf1e8aab428b75c05e9d6e7ad149fd75::1741780015::res://.godot/exported/133200997/export-8081d7bebc46278e0b7e4f2858a7348d-level1.scn
-res://scene/module/gate.tscn::9dd8218e683d954f15d803caf71fef0c::1741676848::res://.godot/exported/133200997/export-d3c028db671af6d0e6a0ee0898039f89-gate.scn
-res://scene/module/the_void.tscn::c8d9df5e8170f92d5d3e8d133edee85d::1741676527::res://.godot/exported/133200997/export-fd0205c528bd556d2cdc738677702c06-the_void.scn
-res://scene/level/level1/level_1_2.tscn::9e453042c7b9fb45fc81a4a5ef91b74f::1741780054::res://.godot/exported/133200997/export-1d4053cbfa27b4ef191463e5b52e7194-level_1_2.scn
-res://scene/module/bad_platform.tscn::b088a1fa4e5feb64dcf6bf2689997396::1741780016::res://.godot/exported/133200997/export-7185e9345e6631b020cf0e1eccb8bd26-bad_platform.scn
-res://scene/module/movable_platform.tscn::605cb550cb4e689dab3493ed1ec7b1b5::1741780016::res://.godot/exported/133200997/export-b8a64a00dc27bb4e1cf9d99d2fea8492-movable_platform.scn
