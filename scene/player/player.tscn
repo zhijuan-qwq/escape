@@ -2,7 +2,7 @@
 
 [ext_resource type="Shader" uid="uid://boe60ociqanv4" path="res://assets/images/player/player.gdshader" id="1_mwd30"]
 [ext_resource type="Texture2D" uid="uid://cosv4de2n3pry" path="res://assets/images/player/idle/caiye_idle1.png" id="1_oh3qj"]
-[ext_resource type="Script" uid="uid://0ikypfslrxwj" path="res://scene/player/player.gd" id="1_tsbrk"]
+[ext_resource type="Script" uid="uid://0ikypfslrxwj" path="res://script/player.gd" id="1_tsbrk"]
 [ext_resource type="Texture2D" uid="uid://crbcg8hun8isu" path="res://assets/images/player/jump/caiye_jump3.png" id="2_bii0o"]
 [ext_resource type="Texture2D" uid="uid://hhkgx3pyubix" path="res://assets/images/player/jump/caiye_jump4.png" id="2_la2eo"]
 [ext_resource type="Texture2D" uid="uid://cyvpq26pul8lx" path="res://assets/images/player/idle/caiye_idle2.png" id="2_y4aey"]
@@ -230,7 +230,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qpirg"]
 size = Vector2(10, 31)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D"]
 z_index = 5
 slide_on_ceiling = false
 floor_constant_speed = true

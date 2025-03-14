@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://com1gfaekhsx5"]
 
-[ext_resource type="Script" uid="uid://d1txd6k3yxf1x" path="res://scene/module/the_void.gd" id="1_3iotf"]
+[ext_resource type="Script" uid="uid://d1txd6k3yxf1x" path="res://script/the_void.gd" id="1_3iotf"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_wtmd0"]
 

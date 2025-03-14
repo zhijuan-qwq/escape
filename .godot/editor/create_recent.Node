@@ -1,3 +1,6 @@
+CanvasLayer
+ColorRect
+EntryPoint
 AnimationPlayer
 Node2D
 Timer
@@ -10,5 +13,3 @@ AnimatableBody2D
 ParallaxLayer
 ParallaxBackground
 CanvasModulate
-DirectionalLight2D
-Node
