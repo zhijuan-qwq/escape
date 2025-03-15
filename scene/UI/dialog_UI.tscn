@@ -1,0 +1,98 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3f3cd84fb6ff"]
+
+[ext_resource type="Texture2D" uid="uid://dq7ky3fl2a47i" path="res://assets/images/profile picture/baicaiye.png" id="1_4igc8"]
+[ext_resource type="Script" uid="uid://c7wb1m1kdsu3x" path="res://script/dialog/dialogue_manager.gd" id="1_rfaxv"]
+[ext_resource type="Resource" uid="uid://doyp0sybaqeoc" path="res://dialogues/dialogue1.tres" id="2_0g3gl"]
+
+[node name="Control" type="Control" node_paths=PackedStringArray("character_name_text", "text_box", "left_avatar", "right_avatar")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rfaxv")
+character_name_text = NodePath("HBoxContainer/Panel/MarginContainer/VBoxContainer/Label")
+text_box = NodePath("HBoxContainer/Panel/MarginContainer/VBoxContainer/Label2")
+left_avatar = NodePath("HBoxContainer/LeftAvatar")
+right_avatar = NodePath("HBoxContainer/RightAvatar")
+main_dialogue = ExtResource("2_0g3gl")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 42.0
+offset_top = 6.0
+offset_right = -41.0
+offset_bottom = 63.0
+grow_horizontal = 2
+
+[node name="LeftAvatar" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("1_4igc8")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="ReferenceRect" type="ReferenceRect" parent="HBoxContainer/LeftAvatar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+border_color = Color(1, 1, 1, 1)
+border_width = 1.2
+editor_only = false
+
+[node name="Panel" type="Panel" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Panel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+text = "名称"
+
+[node name="Label2" type="Label" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "内容"
+autowrap_mode = 3
+
+[node name="RightAvatar" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_4igc8")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="ReferenceRect2" type="ReferenceRect" parent="HBoxContainer/RightAvatar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+border_color = Color(1, 1, 1, 1)
+border_width = 1.2
+editor_only = false
+
+[connection signal="gui_input" from="HBoxContainer/Panel/MarginContainer" to="." method="_on_click"]

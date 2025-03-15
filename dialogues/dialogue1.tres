@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="DialogueGroup" load_steps=9 format=3 uid="uid://doyp0sybaqeoc"]
+
+[ext_resource type="Script" uid="uid://c4qc25v46nu6n" path="res://script/dialog/dialogue.gd" id="1_airvr"]
+[ext_resource type="Texture2D" uid="uid://dq7ky3fl2a47i" path="res://assets/images/profile picture/baicaiye.png" id="2_airvr"]
+[ext_resource type="Texture2D" uid="uid://b1ibs0vvyp3ag" path="res://assets/images/profile picture/null.png" id="3_airvr"]
+[ext_resource type="Script" uid="uid://qqllk56olle7" path="res://script/dialog/dialogue_group.gd" id="4_3yb2m"]
+
+[sub_resource type="Resource" id="Resource_21dv4"]
+script = ExtResource("1_airvr")
+character_name = "菜叶"
+content = "我要采一朵花送给妈妈！"
+avatar = ExtResource("2_airvr")
+show_on_left = true
+metadata/_custom_type_script = "uid://c4qc25v46nu6n"
+
+[sub_resource type="Resource" id="Resource_2wo64"]
+script = ExtResource("1_airvr")
+character_name = "菜叶"
+content = "妈妈！妈妈你看有花~"
+avatar = ExtResource("2_airvr")
+show_on_left = true
+metadata/_custom_type_script = "uid://c4qc25v46nu6n"
+
+[sub_resource type="Resource" id="Resource_6je7j"]
+script = ExtResource("1_airvr")
+character_name = "妈妈"
+content = "作业写完没有！！！"
+avatar = ExtResource("3_airvr")
+show_on_left = false
+metadata/_custom_type_script = "uid://c4qc25v46nu6n"
+
+[sub_resource type="Resource" id="Resource_airvr"]
+script = ExtResource("1_airvr")
+character_name = "菜叶"
+content = "啊哈...我只是想给看看这多花 很好看而已啊...md"
+avatar = ExtResource("2_airvr")
+show_on_left = true
+metadata/_custom_type_script = "uid://c4qc25v46nu6n"
+
+[resource]
+script = ExtResource("4_3yb2m")
+dialogue_list = Array[ExtResource("1_airvr")]([SubResource("Resource_21dv4"), SubResource("Resource_2wo64"), SubResource("Resource_6je7j"), SubResource("Resource_airvr")])
+metadata/_custom_type_script = "uid://qqllk56olle7"

@@ -2,7 +2,7 @@ extends CanvasLayer
 
 @onready var color_rect: ColorRect = $ColorRect
 
-const FADE_TIME:float = 1.0
+const FADE_TIME:float = 0.4
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("F11"):

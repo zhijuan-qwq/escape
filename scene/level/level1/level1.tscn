@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=4 uid="uid://bkcmyt3fxbw0e"]
 
-[ext_resource type="Script" uid="uid://cv2jvi7a8sfk8" path="res://script/level1.gd" id="1_dxeai"]
+[ext_resource type="Script" uid="uid://cv2jvi7a8sfk8" path="res://script/level/level1-1.gd" id="1_dxeai"]
 [ext_resource type="PackedScene" uid="uid://com1gfaekhsx5" path="res://scene/module/the_void.tscn" id="3_mh32f"]
 [ext_resource type="PackedScene" uid="uid://yae402n37gw2" path="res://scene/player/player.tscn" id="3_p1alt"]
 [ext_resource type="Texture2D" uid="uid://b3ofebbaddat" path="res://assets/images/map/tiles/level1/tiles.png" id="3_xfnj1"]
@@ -98,6 +98,16 @@ tile_map = NodePath("../TileMapLayer")
 position = Vector2(520, 240)
 entry_point = "entrance"
 
+[node name="exit" type="Marker2D" parent="."]
+position = Vector2(497, 240)
+script = ExtResource("6_r3gpf")
+metadata/_custom_type_script = "uid://2ics7jwb0il7"
+
+[node name="entrance" type="Marker2D" parent="."]
+position = Vector2(32, 256)
+script = ExtResource("6_r3gpf")
+metadata/_custom_type_script = "uid://2ics7jwb0il7"
+
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
@@ -129,13 +139,3 @@ metadata/_edit_lock_ = true
 position = Vector2(272, 152)
 texture = ExtResource("7_wtmd0")
 metadata/_edit_lock_ = true
-
-[node name="exit" type="Marker2D" parent="."]
-position = Vector2(520, 240)
-script = ExtResource("6_r3gpf")
-metadata/_custom_type_script = "uid://2ics7jwb0il7"
-
-[node name="entrance" type="Marker2D" parent="."]
-position = Vector2(32, 256)
-script = ExtResource("6_r3gpf")
-metadata/_custom_type_script = "uid://2ics7jwb0il7"

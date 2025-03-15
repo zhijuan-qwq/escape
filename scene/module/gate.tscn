@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://d20t223sjxpp6"]
 
 [ext_resource type="Texture2D" uid="uid://durg077t2lvar" path="res://assets/images/map/tiles/level1/gate.png" id="1_3uhbj"]
-[ext_resource type="Script" uid="uid://yyfcx3yqfkj4" path="res://script/gate.gd" id="1_saijd"]
+[ext_resource type="Script" uid="uid://yyfcx3yqfkj4" path="res://script/module/gate.gd" id="1_saijd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_isoqr"]
 atlas = ExtResource("1_3uhbj")
@@ -99,7 +99,9 @@ path = "uid://cr653jruyee1p"
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -24)
 sprite_frames = SubResource("SpriteFrames_v0e4l")
-animation = &"open"
+animation = &"close"
+frame = 5
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -18)
