@@ -12,7 +12,6 @@
 [ext_resource type="Texture2D" uid="uid://ceyqmbwg5lqku" path="res://assets/images/map/BG/level1/BG2.png" id="9_mi6yr"]
 [ext_resource type="Texture2D" uid="uid://2b47w5pmhgl4" path="res://assets/images/map/BG/level1/BG3.png" id="10_pd2qn"]
 
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u8h2f"]
 texture = ExtResource("2_odjkh")
 0:0/0 = 0

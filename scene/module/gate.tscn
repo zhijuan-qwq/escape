@@ -91,9 +91,8 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ptkph"]
 size = Vector2(18, 36)
 
-[node name="Gate" type="Area2D" node_paths=PackedStringArray("gate")]
+[node name="Gate" type="Area2D"]
 script = ExtResource("1_saijd")
-gate = NodePath("AnimatedSprite2D")
 path = "uid://cr653jruyee1p"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

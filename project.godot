@@ -15,10 +15,10 @@ config/tags=PackedStringArray("alpha")
 run/main_scene="res://scene/level/level1/level1.tscn"
 config/features=PackedStringArray("4.4", "Mobile")
 run/delta_smoothing=false
+config/icon="uid://cs12ffpx0bvym"
 boot_splash/show_image=false
 boot_splash/fullsize=false
 boot_splash/use_filter=false
-config/icon="uid://cs12ffpx0bvym"
 
 [autoload]
 

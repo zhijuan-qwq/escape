@@ -26,7 +26,8 @@ func _unhandled_input(event: InputEvent) -> void:
 			velocity.y = JUMP_VELOCITY * 0.45
 	
 	if event.is_action_pressed("interact") and interacting_with:
-		interacting_with.teleport()
+		if interacting_with is Teleporter and interacting_with.can_teleport:
+			interacting_with.teleport()
 		
 #设置相机可以移动范围
 func _ready() -> void: 
