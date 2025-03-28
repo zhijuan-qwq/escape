@@ -1,7 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://if4duh77wn13"]
 
-[ext_resource type="Texture2D" uid="uid://bgk2n88werecn" path="res://assets/images/map/tiles/level1/bad footplate.png" id="1_4e30y"]
+[ext_resource type="Texture2D" uid="uid://bgk2n88werecn" path="res://assets/images/map/level1/bad footplate.png" id="1_4e30y"]
 [ext_resource type="Script" uid="uid://dbb2x1knwuxsy" path="res://script/module/bad_platform.gd" id="1_cjfut"]
+
 
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4e30y"]

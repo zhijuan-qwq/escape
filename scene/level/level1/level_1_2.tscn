@@ -1,16 +1,17 @@
-[gd_scene load_steps=17 format=4 uid="uid://cr653jruyee1p"]
+[gd_scene load_steps=18 format=4 uid="uid://cr653jruyee1p"]
 
 [ext_resource type="Script" uid="uid://cv2jvi7a8sfk8" path="res://script/level/level1-1.gd" id="1_7nhui"]
 [ext_resource type="PackedScene" uid="uid://cykrgxisx6gc1" path="res://scene/module/movable_platform.tscn" id="2_0mwk0"]
-[ext_resource type="Texture2D" uid="uid://b3ofebbaddat" path="res://assets/images/map/tiles/level1/tiles.png" id="2_odjkh"]
+[ext_resource type="AudioStream" uid="uid://bjc5u2ubpggd3" path="res://assets/music/Chestnut.mp3" id="2_54mxl"]
+[ext_resource type="Texture2D" uid="uid://b3ofebbaddat" path="res://assets/images/map/level1/tiles.png" id="2_odjkh"]
 [ext_resource type="PackedScene" uid="uid://if4duh77wn13" path="res://scene/module/bad_platform.tscn" id="2_rcw2m"]
 [ext_resource type="PackedScene" uid="uid://com1gfaekhsx5" path="res://scene/module/the_void.tscn" id="3_54mxl"]
 [ext_resource type="Script" uid="uid://2ics7jwb0il7" path="res://class/EntryPoint.gd" id="4_ew2lb"]
 [ext_resource type="PackedScene" uid="uid://yae402n37gw2" path="res://scene/player/player.tscn" id="4_rgy0e"]
 [ext_resource type="PackedScene" uid="uid://d20t223sjxpp6" path="res://scene/module/gate.tscn" id="5_j55ot"]
-[ext_resource type="Texture2D" uid="uid://dguw01u8ljpsh" path="res://assets/images/map/BG/level1/BG.png" id="8_1rh5e"]
-[ext_resource type="Texture2D" uid="uid://ceyqmbwg5lqku" path="res://assets/images/map/BG/level1/BG2.png" id="9_mi6yr"]
-[ext_resource type="Texture2D" uid="uid://2b47w5pmhgl4" path="res://assets/images/map/BG/level1/BG3.png" id="10_pd2qn"]
+[ext_resource type="Texture2D" uid="uid://dguw01u8ljpsh" path="res://assets/images/map/level1/BG/BG.png" id="8_1rh5e"]
+[ext_resource type="Texture2D" uid="uid://ceyqmbwg5lqku" path="res://assets/images/map/level1/BG/BG2.png" id="9_mi6yr"]
+[ext_resource type="Texture2D" uid="uid://2b47w5pmhgl4" path="res://assets/images/map/level1/BG/BG3.png" id="10_pd2qn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u8h2f"]
 texture = ExtResource("2_odjkh")
@@ -118,6 +119,7 @@ _data = {
 
 [node name="Level1-2" type="Node2D"]
 script = ExtResource("1_7nhui")
+BGM = ExtResource("2_54mxl")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 light_mask = 2

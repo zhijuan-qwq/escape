@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://durg077t2lvar"
-path="res://.godot/imported/gate.png-2e0d0382af64f514d7a0e0337d192ee3.ctex"
+uid="uid://ksk6tlcnxg1a"
+path="res://.godot/imported/BG.png-acf4ce51032ebe45acad2d6521e3bb66.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/map/tiles/level1/gate.png"
-dest_files=["res://.godot/imported/gate.png-2e0d0382af64f514d7a0e0337d192ee3.ctex"]
+source_file="res://assets/images/UI/BG.png"
+dest_files=["res://.godot/imported/BG.png-acf4ce51032ebe45acad2d6521e3bb66.ctex"]
 
 [params]
 

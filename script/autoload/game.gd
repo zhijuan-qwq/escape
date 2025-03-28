@@ -35,3 +35,6 @@ func change_scene(path:String,entry_point:String) -> void:
 	tween = create_tween()
 	tween.tween_property(color_rect,"color:a",0,FADE_TIME)
 	tree.paused = false
+
+func _ready() -> void:
+	color_rect.color.a = 0

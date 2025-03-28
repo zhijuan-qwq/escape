@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgk2n88werecn"
-path="res://.godot/imported/bad footplate.png-54800485999a1517032d4930d9a2e42e.ctex"
+uid="uid://nesyyt8lok4f"
+path="res://.godot/imported/switch.png-e70a8616be595f4f2ab03d7f2388e96b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/map/tiles/level1/bad footplate.png"
-dest_files=["res://.godot/imported/bad footplate.png-54800485999a1517032d4930d9a2e42e.ctex"]
+source_file="res://assets/images/map/level1/switch.png"
+dest_files=["res://.godot/imported/switch.png-e70a8616be595f4f2ab03d7f2388e96b.ctex"]
 
 [params]
 

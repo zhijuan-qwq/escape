@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dguw01u8ljpsh"
-path="res://.godot/imported/BG.png-dba4f111e3f74b6f1cc45fd73d0bfa0c.ctex"
+uid="uid://bgk2n88werecn"
+path="res://.godot/imported/bad footplate.png-d59646a3e0ee5fd307b5584b5f093861.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/map/BG/level1/BG.png"
-dest_files=["res://.godot/imported/BG.png-dba4f111e3f74b6f1cc45fd73d0bfa0c.ctex"]
+source_file="res://assets/images/map/level1/bad footplate.png"
+dest_files=["res://.godot/imported/bad footplate.png-d59646a3e0ee5fd307b5584b5f093861.ctex"]
 
 [params]
 

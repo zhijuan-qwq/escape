@@ -1,6 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cykrgxisx6gc1"]
 
-[ext_resource type="Texture2D" uid="uid://b3ofebbaddat" path="res://assets/images/map/tiles/level1/tiles.png" id="1_qrgc2"]
+[ext_resource type="Texture2D" uid="uid://b3ofebbaddat" path="res://assets/images/map/level1/tiles.png" id="1_qrgc2"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ec1ti"]
 size = Vector2(32, 7.875)

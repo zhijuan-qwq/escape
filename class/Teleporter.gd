@@ -6,4 +6,4 @@ extends Interactable
 var can_teleport: bool = true
 
 func teleport() -> void:
-	Global.change_scene.call_deferred(path,entry_point)
+	Game.change_scene.call_deferred(path,entry_point)

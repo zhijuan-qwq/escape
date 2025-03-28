@@ -1,0 +1,129 @@
+[gd_scene load_steps=9 format=3 uid="uid://dhbxs3aexxyyn"]
+
+[ext_resource type="FontFile" uid="uid://xgn33pdm0dt7" path="res://assets/font/Anton.ttf" id="1_p6me6"]
+[ext_resource type="Texture2D" uid="uid://ksk6tlcnxg1a" path="res://assets/images/UI/BG.png" id="1_sjku2"]
+[ext_resource type="Script" uid="uid://drhslm0gj3xfn" path="res://script/UI/title_screen.gd" id="1_y3a2g"]
+[ext_resource type="FontFile" uid="uid://b62ur61xuaeww" path="res://assets/font/SmileySans-Oblique.ttf" id="3_l4p6c"]
+[ext_resource type="PackedScene" uid="uid://cbf2vpalswfja" path="res://scene/UI/start_animation.tscn" id="5_yh5gb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yh5gb"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xcxku"]
+
+[sub_resource type="Theme" id="Theme_y3a2g"]
+resource_name = "mian_theme"
+default_font = ExtResource("3_l4p6c")
+Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
+Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
+Button/colors/font_focus_color = Color(1, 1, 1, 1)
+Button/colors/font_hover_color = Color(0.925353, 0.925353, 0.925353, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_disabled_color = Color(1, 1, 1, 0.4)
+Button/colors/icon_focus_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_normal_color = Color(1, 1, 1, 1)
+Button/colors/icon_pressed_color = Color(1, 1, 1, 1)
+Button/constants/align_to_largest_stylebox = 0
+Button/constants/h_separation = 4
+Button/constants/icon_max_width = 0
+Button/constants/outline_size = 0
+Button/font_sizes/font_size = 20
+Button/styles/disabled = SubResource("StyleBoxEmpty_yh5gb")
+Button/styles/focus = SubResource("StyleBoxEmpty_yh5gb")
+Button/styles/hover = SubResource("StyleBoxEmpty_yh5gb")
+Button/styles/normal = SubResource("StyleBoxEmpty_xcxku")
+Button/styles/pressed = SubResource("StyleBoxEmpty_yh5gb")
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y3a2g")
+
+[node name="BG" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.126, 0.1386, 0.18, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -185.0
+offset_right = 0.191467
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("1_sjku2")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 359.0
+offset_bottom = 63.0
+theme_override_fonts/font = ExtResource("1_p6me6")
+theme_override_font_sizes/font_size = 45
+text = " Escape: Multiverse"
+
+[node name="V" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.29
+anchor_bottom = 0.29
+offset_left = 10.0
+offset_top = 0.120003
+offset_right = 98.0
+offset_bottom = 193.12
+grow_vertical = 2
+
+[node name="NewGame" type="Button" parent="V"]
+layout_mode = 2
+theme = SubResource("Theme_y3a2g")
+text = "出门创车"
+alignment = 0
+
+[node name="LoadGame" type="Button" parent="V"]
+layout_mode = 2
+theme = SubResource("Theme_y3a2g")
+text = "继续旅途"
+alignment = 0
+
+[node name="About" type="Button" parent="V"]
+layout_mode = 2
+theme = SubResource("Theme_y3a2g")
+text = "关于制作"
+alignment = 0
+
+[node name="Settings" type="Button" parent="V"]
+layout_mode = 2
+theme = SubResource("Theme_y3a2g")
+text = "游戏设置"
+alignment = 0
+
+[node name="ExitGame" type="Button" parent="V"]
+layout_mode = 2
+theme = SubResource("Theme_y3a2g")
+text = "退出游戏"
+alignment = 0
+
+[node name="StartAnimation" parent="." instance=ExtResource("5_yh5gb")]
+
+[connection signal="pressed" from="V/NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="V/About" to="." method="_on_about_pressed"]
+[connection signal="pressed" from="V/ExitGame" to="." method="_on_exit_game_pressed"]

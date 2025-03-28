@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/Chestnut.mp3-db9c8c1d836d46c57bad04404bc20cbb
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

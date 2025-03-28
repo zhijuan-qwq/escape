@@ -12,18 +12,19 @@ config_version=5
 
 config/name="Escape"
 config/tags=PackedStringArray("alpha")
-run/main_scene="res://scene/level/level1/level1.tscn"
+run/main_scene="uid://dhbxs3aexxyyn"
 config/features=PackedStringArray("4.4", "Mobile")
 run/delta_smoothing=false
-config/icon="uid://cs12ffpx0bvym"
+boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/show_image=false
 boot_splash/fullsize=false
 boot_splash/use_filter=false
+config/icon="uid://56yqibtlmm4h"
 
 [autoload]
 
-Bgm="*res://scene/bgm.tscn"
-Global="*res://scene/global.tscn"
+Game="*res://scene/autoload/game.tscn"
+SoundManager="*res://scene/autoload/sound_manager.tscn"
 
 [display]
 

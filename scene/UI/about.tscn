@@ -1,0 +1,100 @@
+[gd_scene load_steps=6 format=3 uid="uid://5six6qnicuml"]
+
+[ext_resource type="Script" uid="uid://cys1bmmx0c0sg" path="res://script/UI/about.gd" id="1_bi56j"]
+[ext_resource type="FontFile" uid="uid://b62ur61xuaeww" path="res://assets/font/SmileySans-Oblique.ttf" id="1_ygq1h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l4p6c"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y3a2g"]
+
+[sub_resource type="Theme" id="Theme_bi56j"]
+resource_name = "mian_theme"
+default_font = ExtResource("1_ygq1h")
+Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
+Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
+Button/colors/font_focus_color = Color(1, 1, 1, 1)
+Button/colors/font_hover_color = Color(0.925353, 0.925353, 0.925353, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_disabled_color = Color(1, 1, 1, 0.4)
+Button/colors/icon_focus_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_normal_color = Color(1, 1, 1, 1)
+Button/colors/icon_pressed_color = Color(1, 1, 1, 1)
+Button/constants/align_to_largest_stylebox = 0
+Button/constants/h_separation = 4
+Button/constants/icon_max_width = 0
+Button/constants/outline_size = 0
+Button/font_sizes/font_size = 20
+Button/styles/disabled = SubResource("StyleBoxEmpty_l4p6c")
+Button/styles/focus = SubResource("StyleBoxEmpty_l4p6c")
+Button/styles/hover = SubResource("StyleBoxEmpty_l4p6c")
+Button/styles/normal = SubResource("StyleBoxEmpty_y3a2g")
+Button/styles/pressed = SubResource("StyleBoxEmpty_l4p6c")
+
+[node name="About" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bi56j")
+
+[node name="BG" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.126, 0.1386, 0.18, 1)
+
+[node name="Return" type="Button" parent="."]
+layout_mode = 0
+offset_right = 68.0
+offset_bottom = 25.0
+theme = SubResource("Theme_bi56j")
+text = " 返回"
+alignment = 0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_ygq1h")
+theme_override_font_sizes/font_size = 25
+text = "关于开发者"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.151
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -96.0
+offset_top = -0.0720024
+offset_right = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_ygq1h")
+text = "策划:白菜叶
+美术:白菜叶
+程序:知倦 白菜叶
+技术协助:银
+
+鸣谢：timothyqiu 银 艾斯比"
+
+[connection signal="pressed" from="Return" to="." method="_on_return_pressed"]
