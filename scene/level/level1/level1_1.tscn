@@ -1,7 +1,6 @@
-[gd_scene load_steps=13 format=4 uid="uid://bkcmyt3fxbw0e"]
+[gd_scene load_steps=12 format=4 uid="uid://bkcmyt3fxbw0e"]
 
 [ext_resource type="Script" uid="uid://cv2jvi7a8sfk8" path="res://script/level/level1-1.gd" id="1_in8gg"]
-[ext_resource type="AudioStream" uid="uid://bjc5u2ubpggd3" path="res://assets/music/Chestnut.mp3" id="2_7wdux"]
 [ext_resource type="Texture2D" uid="uid://b3ofebbaddat" path="res://assets/images/map/level1/tiles.png" id="2_oilw0"]
 [ext_resource type="PackedScene" uid="uid://com1gfaekhsx5" path="res://scene/module/the_void.tscn" id="3_7wdux"]
 [ext_resource type="PackedScene" uid="uid://yae402n37gw2" path="res://scene/player/player.tscn" id="4_i5i4r"]
@@ -79,7 +78,6 @@ sources/0 = SubResource("TileSetAtlasSource_u8h2f")
 
 [node name="Level1-1" type="Node2D"]
 script = ExtResource("1_in8gg")
-BGM = ExtResource("2_7wdux")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 light_mask = 2
